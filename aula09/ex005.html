@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(95, 97, 228);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" >Clique em mim</div>
+    <script>
+        /*
+        var p1 = window.document.getElementsByTagName('p')[1] // 0 indica que eu quero o 1º parágrafo
+        window.document.write('Está escrito assim: + ' p1.innerText)
+        window.alert('p1.innerText')
+        p1.style.color = 'black' (trocar a cor do p1)
+
+        //Diferença entre innerText e innerHTML: HTML puxa a tag "strong"
+
+        var corpo = window.document.body
+        corpo.style.background = 'black' (trocar cor de fundo) 
+
+        //Por ID: 
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.style.color = 'black'
+        d.innerText = 'Estou aguardando'
+        
+        //Por name:
+        var d = window.document.getElementsByName('msg')[0];
+        d.innerText = 'Olá' 
+
+        //Por class:
+        window.document.getElementsByClassName('msg') */
+        
+        var d = window.document.querySelector('div#msg') // # -> id; . -> class
+        d.style.background = 'blue'
+s
+        //window.document.body.write('Olá, mundo!')
+
+
+    </script>
+</body>
+</html>

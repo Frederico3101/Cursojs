@@ -1,0 +1,13 @@
+body {
+  font-family: Helvetica;
+  background: whitesmoke;
+  text-align: center;
+}
+
+section {
+  background: rgb(172, 193, 216);
+  border-radius: 50px;
+  width: 400px;
+  padding: 15px;
+  margin: auto;
+}

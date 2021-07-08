@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome possui ${nome.length} letras.<br/>`) //br = brake roll (quebrar para a linha de baixo)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}</br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+
+        /*
+        var n1 = 1545.5
+        n1.toFixed(2) //colocar duas casas decimais
+        n1.toFixed(2).replace('.', ',') // para substituir o . por ,
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // colocar o valor em reais (pode-se trocar BRL por USD, EUR...)
+        */
+        
+       
+    </script>
+</body>
+</html>

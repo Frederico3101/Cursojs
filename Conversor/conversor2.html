@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+</head>
+    <style>
+        body {
+            font: normal 10pt Arial; 
+            color: rgb(44, 45, 100);
+            background: rgb(145, 145, 219);
+        }
+        div#res {
+            font: normal 15pt Arial; 
+            margin-top: 15px;
+        }
+    </style>
+<body>
+    <h1>Digite um valor em graus Celcius para converter para Kelvin:</h1>
+    <input type="number" name="cls" id="cls">
+    <input type="button" value="Converter" onclick="converter()">
+    <div id="res"></div>
+
+    <script>
+
+    function converter() {
+        var c1 = window.document.getElementById('cls')
+        var c = Number(c1.value) //converter c1 de string para number
+        var r = window.document.getElementById('res')
+        var s = c + 273
+
+        if (c < -273) { 
+            r.innerHTML = 'Essa temperatura não existe!'
+        } else {
+            r.innerHTML = `${c}°C corresponde a ${s}K`
+        }
+        
+    }
+    </script>
+
+</body>
+</html>
